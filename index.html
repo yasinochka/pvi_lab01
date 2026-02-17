@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>CMS Portal</title>
+<link rel="stylesheet" href="style.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+</head>
+<body>
+
+<div class="blob blob1"></div><div class="blob blob2"></div><div class="blob blob3"></div>
+
+
+<header class="topbar">
+  <div class="topbar-brand" onclick="navigate('dashboard')"><span>✦</span>CMS Portal</div>
+  <div class="topbar-right">
+
+    <div data-dropdown-parent style="position:relative;">
+      <button class="notif-btn" id="notif-btn">🔔<span class="notif-dot" id="notif-dot"></span></button>
+      <div class="dropdown notif-dropdown hidden" id="notif-dropdown">
+        <div class="dropdown-header">🔔 Notifications</div>
+        <div id="notif-list"></div>
+      </div>
+    </div>
